@@ -1,7 +1,4 @@
-**/node_modules
-/vendor/
-**/vendor
-/mysql/data
-**/data
+/node_modules
+/vendor
 .env
 .vscode
