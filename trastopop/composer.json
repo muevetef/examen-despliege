@@ -1,0 +1,16 @@
+{
+    "name": "muenetef/trastopop",
+    "description": "MVC app para trastos",
+    "authors": [
+        {
+            "name": "Toni",
+            "email": "email@eamil.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Core\\": "Core/",
+            "App\\": "App"
+        }
+    }
+}
