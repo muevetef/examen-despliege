@@ -1,8 +1,8 @@
-DROP DATABASE trastopopdb;
+-- DROP DATABASE trastopopdb;
 
-CREATE DATABASE trastopopdb;
+-- CREATE DATABASE trastopopdb;
 
-USE trastopopdb;
+-- USE trastopopdb;
 
 CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT,
@@ -35,8 +35,6 @@ CREATE TABLE trastos (
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users (id)
 );
-
-USE trastopopdb;
 
 INSERT INTO
     users (
