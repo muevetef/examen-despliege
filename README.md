@@ -86,6 +86,10 @@ Sigue estos pasos para desplegar el proyecto utilizando Docker Compose:
         MYSQL_DATABASE: trastopopdb
         MYSQL_USER: test
         MYSQL_PASSWORD: 1234
+        MYSQL_CHARSET: utf8mb4
+        MYSQL_COLLATION: utf8mb4_unicode_ci
+        # Forzar utf-8 al cliente de mysql https://github.com/docker-library/mysql/issues/131#issuecomment-248412170
+        LANG: C.UTF-8
         volumes:
         - ./mysql/data:/var/lib/mysql
         - ./mysql/initdb:/docker-entrypoint-initdb.d
